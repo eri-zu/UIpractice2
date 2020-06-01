@@ -1,0 +1,53 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.header {
+	height: 100px;
+	.header-inner {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+#container {
+	width: 410px;
+	margin: 0 auto;
+	position: relative;
+	#conversionBtnFixed {
+		padding: 10px 20px;
+		display: inline-block;
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+		background-color: #000;
+		color: #ffffff;
+		opacity: 0;
+		transition: opacity 1.2s ease 0s;
+		&.active {
+			opacity: 1;
+		}
+	}
+	#wrapper {
+		border-radius: 1.6rem;
+		height: 500px;
+		overflow: scroll;
+	}
+}
+
+.section {
+	width: 100%;
+	height: 600px;
+	padding: 2rem;
+}
+
+.section01, .section03, .section05 {
+	background-color: #ccc;
+}
+
+.section02, .section04, .section06  {
+	background-color: #e0e0e0;
+}
+
+
