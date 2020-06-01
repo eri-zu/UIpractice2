@@ -1,0 +1,32 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.section {
+	width: 100%;
+	height: 600px;
+}
+
+.section01, .section03 {
+	background-color: #ccc;
+}
+.section02 {
+	background-color: #e0e0e0;
+}
+
+#conversionBtnFixed {
+	padding: 10px 20px;
+	display: inline-block;
+	position: absolute;
+	right: 30px;
+	top: 1400px;
+	background-color: #000;
+	color: #ffffff;
+	opacity: 0;
+	transition: opacity 1.2s ease 0s;
+	&.active {
+		opacity: 1;
+	}
+}
