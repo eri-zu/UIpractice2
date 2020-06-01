@@ -13,7 +13,7 @@
 
 		scrollArea = wrapper;
 		scrollY = scrollArea.scrollTop;
-		// プロパティがwindowじゃないので、scrollTopとすること
+		// プロパティがwindowじゃない場合は、scrollTopとすること
 		// pageYOffsetやscrollYはだめ
 
 		console.log(scrollY);
