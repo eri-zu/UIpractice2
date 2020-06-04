@@ -3,7 +3,7 @@
 	// 目標：スムーススクロールでリンク先に移動する、移動スピードは調整できるようにする
 
 	const btns = document.querySelectorAll('.menu-item');
-	const duration = 5;
+	const duration = 3;
 
 	btns.forEach(btn => {
 
@@ -14,7 +14,6 @@
 			const clickedItem = e.target;
 			const targetHref = clickedItem.getAttribute('href');
 			const destination = document.querySelector(targetHref);
-
 			const offsetTop = destination.getBoundingClientRect().top;
 
 			console.log(clickedItem);
@@ -25,12 +24,6 @@
 			TweenMax.to(window, duration, {
 				y: offsetTop
 			});
-
-			// function goToLink () {
-
-			// }
-
-			// goToLink();
 
 		});
 		
