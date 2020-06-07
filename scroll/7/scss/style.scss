@@ -1,0 +1,90 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.header {
+	height: 100px;
+	background-color: pink;
+	.header-inner {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+}
+
+#container {
+	width: 410px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 1.6rem;
+	// #conversionBtnFixed {
+	// 	padding: 10px 20px;
+	// 	display: inline-block;
+	// 	position: absolute;
+	// 	right: 30px;
+	// 	bottom: 80px;
+	// 	background-color: #000;
+	// 	color: #ffffff;
+	// 	opacity: 0;
+	// 	transition: opacity 1.2s ease 0s;
+	// 	font-size: 1.2rem;
+	// 	&.active {
+	// 		opacity: 1;
+	// 	}
+	// }
+	#wrapper {
+		border-radius: 1.6rem;
+		height: 500px;
+		overflow: scroll;
+		background-color: #ececec;
+	}
+	#nav {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		height: 5rem;
+		.nav-item {
+			background-color: #333;
+			color: #ffffff;
+			width: calc(100% / 6);
+			display: block;
+			text-align: center;
+			cursor: pointer;
+			line-height: 5rem;
+			&:not(:last-child) {
+				border-right: 1px solid #fff;
+			}
+		}
+	}
+}
+
+.section {
+	width: 100%;
+	padding: 7rem 3rem;
+}
+
+.section01, .section03, .section05 {
+	background-color: #ccc;
+}
+
+.section02, .section04, .section06  {
+	background-color: #e0e0e0;
+}
+
+.sec4-txt {
+	font-size: 1.5rem;
+	margin-bottom: 4.5rem;
+	line-height: 1.8;
+}
+
+.content {
+	height: 800px;
+}
+
+.content01, .content03 {
+	background-color: pink;
+}
+
