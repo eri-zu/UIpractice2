@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>スクロールするとボタンが現れる</title>
+	<link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+	<div class="wrapper">
+
+		<!-- loading -->
+		<div class="loading">
+			<img src="img/pc_tit.svg" alt="">
+		</div><!-- /loading -->
+
+		<!-- mv -->
+		<div class="mv">
+			<div class="mv-inner">
+
+				<!-- slider -->
+				<div class="slider">
+					<div class="slider-item"></div>
+					<div class="slider-item"></div>
+					<div class="slider-item"></div>
+				</div><!-- /slider -->
+
+				<!-- indicator -->
+				<div class="indicator">
+					<div class="active"></div>
+					<div></div>
+					<div></div>
+				</div><!-- /indicator -->
+
+			</div><!-- /mv-inner -->
+		</div><!-- /mv -->
+
+	</div><!-- /wraper -->
+
+
+
+	<!-- Custom js -->
+	<script src="js/main.js"></script><!-- /Custom js -->
+
+	<!-- TweenMax -->
+	<script src="js/tween/TweenMax.min.js"></script>
+	<script src="js/tween/CustomEase.js"></script>
+	<script src="js/tween/DrawSVGPlugin.min.js"></script>
+
+</body>
+</html>
