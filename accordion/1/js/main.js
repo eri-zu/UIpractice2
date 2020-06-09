@@ -14,8 +14,7 @@
 
 			TweenMax.to(arrow, duration, {
 				ease: Power4.easeInOut,
-				rotation: '135deg',
-				yoyo: true
+				rotation: '+=180deg',
 			});
 
 		});
