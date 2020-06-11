@@ -1,0 +1,37 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.wrapper {
+	height: 100%;
+	max-width: 41.4rem;
+	width: 100%;
+	margin: 0 auto;
+	background-color: yellow;
+	.event {
+		width: 100%;
+		.event-tit {
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+		.slider {
+			overflow-x: scroll;
+			.slider-inner {
+				display: flex;
+				a {
+					display: block;
+					height: 37rem;
+					min-width: 25rem;
+					max-width: 25rem;
+					background-color: green;
+					border-radius: 0.8rem;
+					&:not(:last-child) {
+						margin-right: 3rem;
+					}
+				}
+			}
+		}
+	}
+}
