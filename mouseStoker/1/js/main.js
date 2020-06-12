@@ -37,6 +37,8 @@
 		}   
 	});
 
+	
+
 	// マウスが乗ったらクラスをつける
 	link.addEventListener('mouseenter', (e) => {
 		cursor.classList.add('active');
