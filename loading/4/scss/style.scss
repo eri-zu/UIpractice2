@@ -1,0 +1,24 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	.loading-icon {
+		border-radius: 50%;
+		border: 8px solid transparent;
+		border-top: 8px solid #D8EAED;
+		height: 50px;
+		width: 50px;
+	}
+	&.hide {
+		display: none;
+	}
+}
+
