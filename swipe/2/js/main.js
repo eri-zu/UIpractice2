@@ -1,9 +1,9 @@
 'use strict';
 
-// スワイプ実装
-// スルスルした動き
+// x軸スクロールの動きをoverflow scrollを使わずに実装
 
 {
+	
 	const sliderInner = document.querySelector('.slider-inner');
 	const items = document.querySelectorAll('.slider-inner a ');
 	// const slider = document.querySelector('.slider');

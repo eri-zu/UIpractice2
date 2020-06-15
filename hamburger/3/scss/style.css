@@ -59,41 +59,57 @@ fieldset, img {
   border: 0;
 }
 
-.wrapper {
-  height: 100%;
-  max-width: 41.4rem;
+.inner {
   width: 100%;
   margin: 0 auto;
-  background-color: #F0F0F0;
+  height: 100%;
+  position: relative;
 }
 
-.wrapper .event {
-  width: 100%;
+.menuIcon {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 4rem;
+  width: 4rem;
+  padding: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 30px;
+  top: 15px;
 }
 
-.wrapper .event .event-tit {
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.wrapper .event .slider {
-  overflow-x: hidden;
-  background-color: pink;
-}
-
-.wrapper .event .slider .slider-inner {
-  display: flex;
-}
-
-.wrapper .event .slider .slider-inner a {
-  display: block;
-  height: 37rem;
-  min-width: 25rem;
-  max-width: 25rem;
+.menuIcon .menuIconBar {
   background-color: #D8EAED;
-  border-radius: 0.8rem;
+  width: 4rem;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 2rem);
+  top: calc(50% - 1.5px);
+  transition: all 0.3s;
 }
 
-.wrapper .event .slider .slider-inner a:not(:last-child) {
-  margin-right: 3rem;
+.menuIcon .menuIconBar:nth-child(2) {
+  transform: translateY(0);
+}
+
+.menuIcon .menuIconBar:nth-child(2).active {
+  transform: translateX(130%);
+  opacity: 0;
+}
+
+.menuIcon .menuIconBar:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.menuIcon .menuIconBar:nth-child(1).active {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.menuIcon .menuIconBar:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.menuIcon .menuIconBar:nth-child(3).active {
+  transform: translateY(0) rotate(45deg);
 }
