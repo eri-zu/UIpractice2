@@ -68,11 +68,13 @@ fieldset, img {
 }
 
 .loading .loading-icon {
-  border-radius: 50%;
-  border: 8px solid transparent;
-  border-top: 8px solid #D8EAED;
-  height: 50px;
-  width: 50px;
+  height: 10px;
+  width: 6px;
+  background-color: #D8EAED;
+}
+
+.loading .loading-icon:not(:last-child) {
+  margin-right: 5px;
 }
 
 .loading.hide {

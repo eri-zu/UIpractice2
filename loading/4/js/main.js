@@ -2,13 +2,14 @@
 
 // 目標:animationを使わずにTweenMaxでローティング　
 {
-	const icon = document.querySelector('.loading-icon');
+	const bars = document.querySelectorAll('.loading-icon');
 	const duration = 1.5;
 	
-	TweenMax.to(icon, duration, {
-		ease: Linear.easeNone,
-		repeat: -1,
-		rotation: '360deg'
-	});
+	TweenMax.staggerTo(bars, 1.5, {
+		height: '40px',
+		opacity: 0.6,
+		ease:Linear.easeNone,
+		repeat: -1, // -1は無限リピート
+	}, 0.2);
 
 }
