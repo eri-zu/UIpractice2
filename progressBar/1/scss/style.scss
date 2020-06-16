@@ -1,0 +1,56 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+body {
+	background-color: #D8EAED;
+	cursor: none; // 元々あるカーソルを消す
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;;
+	#clickableArea {
+		display: inline-block;
+		padding: 2rem 4rem;
+	}
+}
+
+#cursor, #cursor-follower {
+	position: absolute;
+	top: 0; // bodyの左上に配置
+	left: 0;
+	border-radius: 50%;
+	pointer-events: none; //他の要素がクリックできなくならないようにする
+
+}
+
+// JSなかったら左上に表示されるだけ
+#cursor {
+	background-color: #000;
+	width: 6px;
+	height: 6px;
+	z-index: 1001;
+	&.active {
+		transform: scale(0);
+	}
+}
+
+#cursor-follower {
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 40px;
+	height: 40px;
+	z-index: 1000;
+	transition: transform ease-in-out 0.1s; // 拡大スピードをほんの少し遅く
+	&.active {
+		transform: scale(3);
+	}
+}
+
