@@ -10,8 +10,13 @@
 		imgs.forEach(img => {
 
 			const src = img.getAttribute('data-src');
-			img.setAttribute('src', src);
-			
+
+			const timer = setTimeout(() => {
+
+				img.setAttribute('src', src);
+
+			}, 2000);
+
 		});
 		
 	});
