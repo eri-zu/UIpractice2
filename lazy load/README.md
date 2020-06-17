@@ -3,10 +3,13 @@
 
 <h2>1 / スクロール</h2>
 スクロール量に応じて画像の読み込みをスタート
+https://eri-tsutsui.github.io/UIpractice2/lazy%20load/1/
 
 <h2>2 / ロード後</h2>
 windowのロードが終わったら、画像の読み込みを開始
+https://eri-tsutsui.github.io/UIpractice2/lazy%20load/2/
 
 
 <h2>3 / ロード後、数秒後</h2>
 windowのロードが終わって2秒後に読み込み開始
+https://eri-tsutsui.github.io/UIpractice2/lazy%20load/3/
