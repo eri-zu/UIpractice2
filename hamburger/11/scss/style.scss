@@ -1,0 +1,63 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.inner {
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	position: relative;
+}
+
+.menuIcon {
+	border-radius: 50%;
+	background-color: #D8EAED;
+	height: 4rem;
+	width: 4rem;
+	padding: 40px;
+	box-sizing: border-box;
+	position: absolute;
+	right: 30px;
+	top: 15px;
+	.menuIconBar {
+		background-color: #fff;
+		width: 4rem;
+		height: 3px;
+		display: inline-block;
+		position: absolute;
+		left: calc(50% - 2rem);
+		top: calc(50% - 1.5px);
+		transition: all 0.3s;
+		&:nth-child(2) {
+			transform: translateY(0);
+			&.active {
+				opacity: 0;
+			}
+		}
+		&:nth-child(1) {
+			transform: translateY(-10px);
+			&.active {
+				transform: translateY(0) rotate(-45deg);
+			}
+		}
+		&:nth-child(3) {
+			transform: translateY(10px);
+			&.active {
+				transform: translateY(0) rotate(45deg);
+			}
+		}
+	}
+}
+
+.bg {
+	z-index: -2;
+}
+
+.white {
+	background-color: #fff;
+	z-index: -1;
+}
+
+
