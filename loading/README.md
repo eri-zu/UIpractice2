@@ -1,15 +1,19 @@
-<h1>lazy load</h1>
-画像読み込み遅延を複数の方法で実装
+<h1>loading</h1>
+ローディングアニメーションの作成や、ローディング終了後次のアニメーションへ移り変わるときのタイミング取得の練習を目的とする
 
-<h2>1 / スクロール</h2>
-<p>スクロール量に応じて画像の読み込みをスタート</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/lazy%20load/1/</p>
+<h2>1 / ローディング＋スライダー</h2>
+<p>ローディングでロゴを見せて、その後スライダーをスタート</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/loading/1/</p>
 
-<h2>2 / ロード後</h2>
-<p>windowのロードが終わったら、画像の読み込みを開始
-<p>https://eri-tsutsui.github.io/UIpractice2/lazy%20load/2/</p>
+<h2>2 / ローダー</h2>
+<p>よくあるドットのローダーをTweenMaxで実装</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/loading/2/</p>
 
 
-<h2>3 / ロード後、数秒後</h2>
-<p>windowのロードが終わって2秒後に読み込み開始
-<p>https://eri-tsutsui.github.io/UIpractice2/lazy%20load/3/</p>
+<h2>3 / ローダー</h2>
+<p>よくある丸くてグルグル回るローダーをkeyframeで実装</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/loading/3/</p>
+
+<h2>4 / ローダー</h2>
+<p>よくあるバーのローダーをTweenMaxで実装（動きがガタガタするので見直し要）</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/loading/4/</p>
