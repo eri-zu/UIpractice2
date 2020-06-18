@@ -80,6 +80,12 @@ fieldset, img {
   justify-content: center;
   align-items: center;
   height: 100%;
+  opacity: 0;
+  transition: opacity 1.6s ease 1s;
+}
+
+.mv.active {
+  opacity: 1;
 }
 
 .mv .mv-inner {
