@@ -17,3 +17,7 @@
 <h2>4 / ローダー</h2>
 <p>よくあるバーのローダーをTweenMaxで実装（動きがガタガタするので見直し要）</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/loading/4/</p>
+
+<h2>5 / ローディングパーセントの表示</h2>
+<p>パーセント表示理解のための超基礎（easingなしなので、数字は刻まれない）</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/loading/4/</p>
