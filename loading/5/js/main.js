@@ -21,12 +21,12 @@
 			// 進捗率（%）
 			target = loadIndex / len * 100;
 			currentPos += (target - currentPos) * 0.12; // イージング
-			txt.textContent = Math.floor(currentPos); // 整数返す
+			txt.textContent = Math.floor(target); // 整数返す
 
 			// 99.9より大きければ100とみなす
-			if(target > 99.9) {
-				target = 100;
-			}
+			// if(target > 99.9) {
+			// 	target = 100;
+			// }
 
 			// 終了処理
 			if(target >= 100) {
