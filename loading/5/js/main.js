@@ -13,9 +13,6 @@
 
 	imgs.forEach(img => {
 		
-		const src = img.getAttribute('data-src');
-		img.setAttribute('src', src); 
-
 		img.addEventListener('load', () => {
 
 			//カウンター
@@ -37,6 +34,9 @@
 			}
 
 		});
+
+		const src = img.getAttribute('data-src');
+		img.setAttribute('src', src); 
 
 	});
 
