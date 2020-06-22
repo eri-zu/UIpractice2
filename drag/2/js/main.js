@@ -25,7 +25,6 @@
 		if(isDrag) {
 			amount.innerHTML = currentPosX - startPosX;
 			dist = currentPosX - startPosX;
-			console.log(dist);
 
 			TweenMax.to(sliderInner, 0.1, {
 				// ease: Power4.easeInOut,
@@ -38,6 +37,7 @@
 	function mouseUpHandler (e) {
 		isDrag = false;
 		sliderInner.classList.remove('active');
+		
 	}
 	
 

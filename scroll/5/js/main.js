@@ -3,7 +3,6 @@
 	// 目標：スムーススクロールでリンク先に移動する、移動スピードは調整できるようにする
 
 	const btns = document.querySelectorAll('.menu-item');
-	const wrapper = document.getElementById('wrapper');
 	const duration = 1;
 
 	btns.forEach(btn => {
