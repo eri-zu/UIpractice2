@@ -1,4 +1,4 @@
-import Percent from "./Percent";
+import Percent from "./Percent.js";
 
 export default class Images {
 

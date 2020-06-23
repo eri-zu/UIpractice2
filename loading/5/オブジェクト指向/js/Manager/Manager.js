@@ -1,6 +1,6 @@
-import Screen from "../Util/Images";
-import Images from "../Util/Images";
-import Percent from "../Util/Images";
+import Screen from "../Util/Screen.js";
+import Images from "../Util/Images.js";
+import Percent from "../Util/Percent.js";
 
 export default class Manager {
 

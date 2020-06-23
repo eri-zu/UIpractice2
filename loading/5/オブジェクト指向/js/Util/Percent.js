@@ -1,6 +1,4 @@
-import Images from "Images";
-
-export default class Images {
+export default class Percent {
 
 	constructor () {
 		// DOM
