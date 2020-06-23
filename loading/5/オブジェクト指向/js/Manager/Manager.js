@@ -12,6 +12,7 @@ export default class Manager {
 
 		this.percent.addEventListener('updatedCounter', () => {
 			this.images.setSrc();
+			this.dispatchEvent(new Event(goUpdate));
 		});
 		
 		this.percent.addEventListener('reachedMax', () => {
