@@ -1,5 +1,6 @@
-export default class Screen {
+export default class Screen extends EventTarget {
 	constructor () {
+		super ();
 		// DOM
 		this.loadingScreen = document.querySelectorAll('.loading');
 	}

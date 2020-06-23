@@ -1,6 +1,7 @@
-export default class Percent {
+export default class Percent extends EventTarget{
 
 	constructor () {
+		super ();
 		// DOM
 		this.txt = document.querySelector('.loading-percent');
 		// variable

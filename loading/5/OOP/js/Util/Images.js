@@ -1,6 +1,7 @@
-export default class Images {
+export default class Images extends EventTarget {
 
 	constructor () {
+		super ();
 		// DOM
 		this.imgs = document.querySelectorAll('img');
 		this.len = this.imgs.length;

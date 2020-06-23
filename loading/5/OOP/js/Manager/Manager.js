@@ -2,9 +2,10 @@ import Screen from "../Util/Screen.js";
 import Images from "../Util/Images.js";
 import Percent from "../Util/Percent.js";
 
-export default class Manager {
+export default class Manager extends EventTarget {
 
 	constructor () {
+		super ();
 
 		// 管轄するクラス
 		this.screen = new Screen();
