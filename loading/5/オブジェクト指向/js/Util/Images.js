@@ -11,9 +11,11 @@ export default class Images {
 	setSrc() {
 		this.imgs.forEach(img => {
 
-			img.addEventListener('load', () => {
-				this.percent = new Percent();
-				this.percent.updateProgress();
+			this.addEventListener('goUpdate', () => {
+				img.addEventListener('load', () => {
+					this.percent = new Percent();
+					this.percent.updateProgress();
+				});
 			});
 
 			src = img.getAttribute('data-src');
