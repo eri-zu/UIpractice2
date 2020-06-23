@@ -4,6 +4,8 @@ export default class Percent extends EventTarget{
 		super ();
 		// DOM
 		this.txt = document.querySelector('.loading-percent');
+		this.imgs = document.querySelectorAll('img');
+		this.len = this.imgs.length;
 		// variable
 		this.target = 0;
 		this.loadIndex = 0;
@@ -24,7 +26,7 @@ export default class Percent extends EventTarget{
 		}
 
 		// 更新報告
-		this.dispatchEvent(new Event('updatedCounter'));
+		// this.dispatchEvent(new Event('updatedCounter'));
 			
 	}
 
