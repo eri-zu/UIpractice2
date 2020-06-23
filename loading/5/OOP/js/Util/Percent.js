@@ -19,11 +19,11 @@ export default class Percent {
 
 		// 終了処理
 		if(this.target >= 100) {
-			this.dispatchEvent(new Event(reachedMax));
+			this.dispatchEvent(new Event('reachedMax'));
 		}
 
 		// 更新報告
-		this.dispatchEvent(new Event(updatedCounter));
+		this.dispatchEvent(new Event('updatedCounter'));
 			
 	}
 
