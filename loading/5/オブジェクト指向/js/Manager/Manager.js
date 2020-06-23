@@ -1,40 +1,22 @@
-'use strict';
+import Screen from "../Util/Images";
+import Images from "../Util/Images";
+import Percent from "../Util/Images";
 
-// 目標:ローディングバー
+export default class Manager {
 
-{
-	const loadingScreen = document.querySelector('.loading');
-	const imgs = document.querySelectorAll('img');
-	const txt = document.querySelector('.loading-percent');
-	const len = imgs.length;
-	let target = 0;
-	let loadIndex = 0;
+	constructor () {
+		// 管轄するクラス
+		this.screen = new Screen();
+		this.images = new Images();
+		this.percent = new Percent();
 
-	imgs.forEach(img => {
-		
-		img.addEventListener('load', () => {
-
-			//カウンター
-			loadIndex ++;	
-
-			// 進捗率（%）
-			target = loadIndex / len * 100;
-			txt.textContent = Math.floor(target); // 整数返す
-
-			// 終了処理
-			if(target >= 100) {
-				onComplete();
-			}
-
+		this.percent.addEventListener('updatedCounter', () => {
+			this.images.setSrc();
 		});
-
-		const src = img.getAttribute('data-src');
-		img.setAttribute('src', src); 
-
-	});
-
-	function onComplete () {
-		loadingScreen.classList.add('hide');
+		
+		this.percent.addEventListener('reachedMax', () => {
+			this.screen.onComplete();
+		});
 	}
-	
+
 }
