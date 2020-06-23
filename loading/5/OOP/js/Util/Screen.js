@@ -2,7 +2,7 @@ export default class Screen extends EventTarget {
 	constructor () {
 		super ();
 		// DOM
-		this.loadingScreen = document.querySelectorAll('.loading');
+		this.loadingScreen = document.querySelector('.loading');
 	}
 
 	onComplete() {

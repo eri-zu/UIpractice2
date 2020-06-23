@@ -15,13 +15,13 @@ export default class Manager extends EventTarget {
 		// this.percent.addEventListener('updatedCounter', () => {
 			this.images.setSrc();
 		// });
-		
-		this.percent.addEventListener('reachedMax', () => {
-			this.screen.onComplete();
-		});
 
 		this.images.addEventListener('loadedImg', () => {
 			this.percent.updateProgress();
+		});
+		
+		this.percent.addEventListener('reachedMax', () => {
+			this.screen.onComplete();
 		});
 
 	}
