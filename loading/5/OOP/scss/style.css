@@ -73,6 +73,7 @@ body {
   left: 0;
   background-color: yellow;
   text-align: center;
+  transition: opacity 0.3s ease 0;
 }
 
 .loading.hide {
