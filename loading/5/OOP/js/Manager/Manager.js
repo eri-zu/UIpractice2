@@ -5,6 +5,7 @@ import Percent from "../Util/Percent.js";
 export default class Manager {
 
 	constructor () {
+
 		// 管轄するクラス
 		this.screen = new Screen();
 		this.images = new Images();
@@ -12,12 +13,16 @@ export default class Manager {
 
 		this.percent.addEventListener('updatedCounter', () => {
 			this.images.setSrc();
-			this.dispatchEvent(new Event(goUpdate));
 		});
 		
 		this.percent.addEventListener('reachedMax', () => {
 			this.screen.onComplete();
 		});
+
+		this.images.addEventListener('loadedImg', () => {
+			this.percent.updateProgress();
+		});
+
 	}
 
 }

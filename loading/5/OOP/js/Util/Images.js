@@ -1,5 +1,3 @@
-import Percent from "./Percent.js";
-
 export default class Images {
 
 	constructor () {
@@ -10,14 +8,11 @@ export default class Images {
 
 	setSrc() {
 		this.imgs.forEach(img => {
-
-			this.addEventListener('goUpdate', () => {
-				img.addEventListener('load', () => {
-					this.percent = new Percent();
-					this.percent.updateProgress();
-				});
+	
+			img.addEventListener('load', () => {
+				this.dispatchEvent(new Event(loadedImg));
 			});
-
+		
 			src = img.getAttribute('data-src');
 			img.setAttribute('src', src);
 
