@@ -12,9 +12,9 @@ export default class Manager extends EventTarget {
 		this.images = new Images();
 		this.percent = new Percent();
 
-		this.percent.addEventListener('updatedCounter', () => {
+		// this.percent.addEventListener('updatedCounter', () => {
 			this.images.setSrc();
-		});
+		// });
 		
 		this.percent.addEventListener('reachedMax', () => {
 			this.screen.onComplete();
