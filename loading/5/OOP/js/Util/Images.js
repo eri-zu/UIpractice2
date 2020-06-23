@@ -4,7 +4,6 @@ export default class Images extends EventTarget {
 		super ();
 		// DOM
 		this.imgs = document.querySelectorAll('img');
-		// this.len = this.imgs.length;
 	}
 
 	setSrc() {

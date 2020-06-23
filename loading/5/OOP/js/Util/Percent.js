@@ -24,9 +24,6 @@ export default class Percent extends EventTarget{
 		if(this.target >= 100) {
 			this.dispatchEvent(new Event('reachedMax'));
 		}
-
-		// 更新報告
-		// this.dispatchEvent(new Event('updatedCounter'));
 			
 	}
 
