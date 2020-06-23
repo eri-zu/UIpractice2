@@ -14,8 +14,8 @@ export default class Images extends EventTarget {
 				this.dispatchEvent(new Event('loadedImg'));
 			});
 		
-			src = img.getAttribute('data-src');
-			img.setAttribute('src', src);
+			this.src = img.getAttribute('data-src');
+			img.setAttribute('src', this.src);
 
 		});
 	}
