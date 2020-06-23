@@ -21,5 +21,6 @@ export default class Images {
 
 		});
 	}
+	"s"
 
 }
