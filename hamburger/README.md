@@ -22,16 +22,16 @@
 <h2>7</h2>
 <p>https://eri-tsutsui.github.io/UIpractice2/hamburger/7/</p>
 
-<h2>8</h2>
+<h2>8（編集中）</h2>
 <p>https://eri-tsutsui.github.io/UIpractice2/hamburger/8/</p>
 
-<h2>9</h2>
+<h2>9（編集中）</h2>
 <p>https://eri-tsutsui.github.io/UIpractice2/hamburger/9/</p>
 
 <h2>10</h2>
 <p>https://eri-tsutsui.github.io/UIpractice2/hamburger/10/</p>
 
-<h2>11</h2>
+<h2>11（編集中）</h2>
 <p>https://eri-tsutsui.github.io/UIpractice2/hamburger/11/</p>
 
 <h2>12</h2>
