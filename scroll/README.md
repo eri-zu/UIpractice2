@@ -1,24 +1,34 @@
-<h1>loading</h1>
-ローディングアニメーションの作成や、ローディング終了後次のアニメーションへ移り変わるときのタイミング取得の練習を目的とする
+<h1>scroll</h1>
+スクロールして発火する様々なイベントを実装
 
-<h2>1 / ローディング＋スライダー</h2>
-<p>ローディングでロゴを見せて、その後スライダーをスタート</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/loading/1/</p>
+<h2>1 / ボタンのフェードインver1</h2>
+<p>800pcスクロールして、コンバージョンボタンのフェードイン</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/1/</p>
 
-<h2>2 / ローダー</h2>
-<p>よくあるドットのローダーをTweenMaxで実装</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/loading/2/</p>
+<h2>2 / ボタンのフェードインver2</h2>
+<p>基本的に1と同じだが、スクロールエリアがwindowではなく、指定した要素内の場合</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/2/</p>
+
+<h2>3 / ボタンのフェードインver3</h2>
+<p>基本的に2と同じだが、スクロール量を絶対値（800px）ではなく、section04がスクロールエリア内に入ってきた時にボタンをフェードインさせる</p>
+<p>※スクロール量を数値で指定しない練習</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/2/</p>
 
 
-<h2>3 / ローダー</h2>
-<p>よくある丸くてグルグル回るローダーをkeyframeで実装</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/loading/3/</p>
+<h2>4 / ボタンのフェードインver4</h2>
+<p>基本的に3と同じだが、スクロールエリア内にsection04の具体的なポイントが入ってきた時にボタンをフェードインさせる</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/2/</p>
 
-<h2>4 / ローダー</h2>
-<p>よくあるバーのローダーをTweenMaxで実装（動きがガタガタするので見直し要）</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/loading/4/</p>
+<h2>5 / スムーススクロールver1</h2>
+<p>スムーススクロールでページ内リンク（ヘッダーは固定でない）</p>
+<p>TweenMax利用</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/2/</p>
 
-<h2>5 / ローディングパーセントの表示</h2>
-<p>パーセント表示理解のための超基礎（easingなしなので、数字は刻まれない）</p>
-<p>追記：OOPでも書いてみた</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/loading/4/</p>
+<h2>6 / スムーススクロールver2</h2>
+<p>2と5のコンビネーション。特定エリア内でのスムーススクロールしてページ内リンク</p>
+<p>TweenMax利用</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/2/</p>
+
+<h2>7 /　ヘッダーのカラー変更</h2>
+<p>section03内にいる時のみ、ヘッダーカラーを変更する</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/2/</p>
