@@ -29,11 +29,15 @@
 <p>TweenMax利用</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/scroll/6/</p>
 
-<h2>7 /　ヘッダーのカラー変更</h2>
-<p>section03内にいる時のみ、ヘッダーカラーを変更する</p>
+<h2>7 /　スムーススクロールver3</h2>
+<p>6とほぼ同じだが、念のため特定エリア外も領域を作成してバグをチェックした</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/scroll/7/</p>
+
+<h2>8 /　ヘッダーのカラー変更</h2>
+<p>section03内にいる時のみ、ヘッダーカラーを変更する（特定エリアの検知が目標）</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/8/</p>
 
 <h2>9 /　スクロールインジゲーター</h2>
 <p>最後までスクロールすると、インジゲーターが100%になる</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/scroll/7/</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/9/</p>
 
