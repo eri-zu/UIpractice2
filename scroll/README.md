@@ -32,3 +32,8 @@
 <h2>7 /　ヘッダーのカラー変更</h2>
 <p>section03内にいる時のみ、ヘッダーカラーを変更する</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/scroll/7/</p>
+
+<h2>9 /　スクロールインジゲーター</h2>
+<p>最後までスクロールすると、インジゲーターが100%になる</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/7/</p>
+
