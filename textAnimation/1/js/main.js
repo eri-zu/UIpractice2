@@ -8,7 +8,6 @@
 	const target = document.querySelector('.text');
 	const txt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus obcaecati possimus, eaque ullam delectus vitae, perspiciatis recusandae, modi aliquam cupiditate sint quia consequuntur quis. Laudantium, accusamus totam! Optio, eum molestias!';
 	let letters = txt.split(''); 
-	const num = letters.length; // 245
 	const speed = 50;
 
 	letters.forEach((letter, index) => {

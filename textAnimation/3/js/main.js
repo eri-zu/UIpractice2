@@ -1,28 +1,23 @@
 'use strict';
 
-// 目標:タイプライターアニメーションの基本
-// forEachを使う
-// 文字はJSで指定（htmlでは空）
+// 目標:タイプライターアニメーションの基本2
+// setTimeout
 
 {
+
 	const target = document.querySelector('.text');
-	const txt = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus obcaecati possimus, eaque ullam delectus vitae, perspiciatis recusandae, modi aliquam cupiditate sint quia consequuntur quis. Laudantium, accusamus totam! Optio, eum molestias!';
-	let letters = txt.split(''); 
-	const num = letters.length; // 245
+	const txt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem et quia debitis repellat incidunt accusamus rerum odit? Nobis cum illo aliquid, est aut maiores odit, nisi distinctio aperiam quo dolor!";
 	const speed = 50;
+	let i = 0;
 
-	letters.forEach((letter, index) => {
+	function typeWriter() {
+		if (i < txt.length) {
+			target.innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		}
+	}	
 
-		setTimeout(() => {
-			target.textContent += letter;
-		}, speed * index);
-
-		// if(index === num) {
-		// 	setTimeout(() => {
-		// 		target.textContent -= letter;
-		// 	}, speed * index);
-		// }
-		
-	});
-
+	typeWriter();
+	
 }
