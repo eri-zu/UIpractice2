@@ -11,9 +11,6 @@
 	let direction;
 
 	swipe();
-	// onDown();
-	// onUp();
-
 
 	function swipe() {
 		sliderInner.addEventListener('touchstart', onTouchStart);
@@ -30,12 +27,12 @@
 	// スワイプの方向判定
 	// 70px以上移動しないとスワイプと判断しない
 	function onTouchMove(event) {
-
 		if(position - getPosition(event) > 70) { 
 			direction = 'left';
 		} else if(position - getPosition(event) < -70) {
 			direction = 'right';
 		}
+
 	}
 
 	// スワイプ結果
@@ -60,48 +57,48 @@
 		return event.changedTouches[0].pageX;
 	}
 	
-	items.forEach(clickedItem => {
+	// items.forEach(clickedItem => {
 
-		clickedItem.addEventListener('mousedown', (e) => {
-			e.preventDefault();
-			TweenMax.to(clickedItem, 0.8, {
-				scale: 0.96,
-				ease: Expo.easeOut,
-			});
-		});
+	// 	clickedItem.addEventListener('mousedown', (e) => {
+	// 		e.preventDefault();
+	// 		TweenMax.to(clickedItem, 0.8, {
+	// 			scale: 0.96,
+	// 			ease: Expo.easeOut,
+	// 		});
+	// 	});
 
-		clickedItem.addEventListener('touchstart', (e) => {
-			e.preventDefault();
-			TweenMax.to(clickedItem, 0.8, {
-				scale: 0.96,
-				ease: Expo.easeOut,
-			});
-		});
+	// 	clickedItem.addEventListener('touchstart', (e) => {
+	// 		e.preventDefault();
+	// 		TweenMax.to(clickedItem, 0.8, {
+	// 			scale: 0.96,
+	// 			ease: Expo.easeOut,
+	// 		});
+	// 	});
 
-		clickedItem.addEventListener('mouseup', (e) => {
-			e.preventDefault();
-			TweenMax.to(clickedItem, 0.8, {
-				scale: 1,
-				ease: Expo.easeOut,
-			});
-		});
+	// 	clickedItem.addEventListener('mouseup', (e) => {
+	// 		e.preventDefault();
+	// 		TweenMax.to(clickedItem, 0.8, {
+	// 			scale: 1,
+	// 			ease: Expo.easeOut,
+	// 		});
+	// 	});
 
-		clickedItem.addEventListener('mousemove', (e) => {
-			e.preventDefault();
-			TweenMax.to(clickedItem, 0.8, {
-				scale: 1,
-				ease: Expo.easeOut,
-			});
-		});
+	// 	clickedItem.addEventListener('mousemove', (e) => {
+	// 		e.preventDefault();
+	// 		TweenMax.to(clickedItem, 0.8, {
+	// 			scale: 1,
+	// 			ease: Expo.easeOut,
+	// 		});
+	// 	});
 
-		clickedItem.addEventListener('touchend', (e) => {
-			e.preventDefault();
-			TweenMax.to(clickedItem, 0.8, {
-				scale: 1,
-				ease: Expo.easeOut,
-			});
-		});
+	// 	clickedItem.addEventListener('touchend', (e) => {
+	// 		e.preventDefault();
+	// 		TweenMax.to(clickedItem, 0.8, {
+	// 			scale: 1,
+	// 			ease: Expo.easeOut,
+	// 		});
+	// 	});
 
-	});
+	// });
 
 }

@@ -77,7 +77,7 @@ fieldset, img {
 }
 
 .wrapper .event .slider {
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 .wrapper .event .slider .slider-inner {
