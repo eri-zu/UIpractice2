@@ -2,7 +2,7 @@
 画面遷移アニメーションの練習
 
 <h2>1 / シンプル</h2>
-<p>シンプルなマウスストーカー</p>
+<p>aタグ上でマウスストーカーが大きくなる</p>
 <p>TweenMaxで実装</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/1/</p>
 
