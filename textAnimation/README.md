@@ -2,13 +2,13 @@
 テキストのアニメーションを実装
 
 <h2>1 / タイプライター風</h2>
-<p>タイプライター風の文字表示基礎</p>
+<p>タイプライター風の基礎</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/textAnimation/1/</p>
 
 <h2>2 / タイプライター風</h2>
-<p>タイプライター風の文字表示基礎（タイピングバー縦を追加）</p>
+<p>1にタイプライター風の文字表示基礎（タイピングバー縦を追加）</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/textAnimation/2/</p>
 
-<h2>3 / １の逆戻りver</h2>
-<p>タイプライター風の文字を表示したあと、消えて戻るエフェクト</p>
+<h2>3 / ２と同じ</h2>
+<p>jsのコードを少し変えてみた（charAt(i)を使用）</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/textAnimation/3/</p>
