@@ -1,6 +1,6 @@
 'use strict';
 
-// 目標:アコーディオンを開く TweenMax使う
+// 目標:アコーディオンを開く TweenMax使ってみる
 {
 	const accordions = document.querySelectorAll('.box');
 	const duration = 0;
@@ -19,7 +19,5 @@
 
 		});
 	});
-
-
 
 }
