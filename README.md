@@ -13,6 +13,8 @@
 
 <div>
 <p>【目標】</p>
-<p>1. JavaScriptにとにかく慣れること</p>
-<p>2. アニメーションの感覚をつかむ（ライブラリはTweenMaxを使用）</p>
+<ol>
+  <li>JavaScriptにとにかく慣れること</li>
+  <li> アニメーションの感覚をつかむ（ライブラリはTweenMaxを使用</li>
+<ol> 
 </div>
