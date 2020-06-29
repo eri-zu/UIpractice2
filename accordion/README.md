@@ -6,6 +6,6 @@
 <p>https://eri-tsutsui.github.io/UIpractice2/accordion/1/</p>
 
 <h2>2 / スライドダウンのアコーディオン</h2>
-<p>１を理想の動きに近づけた</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/accordion/1/</p>
+<p>スライドダウンで開閉するようにして、1を理想の動きに近づけた。</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/accordion/2/</p>
 
