@@ -16,6 +16,6 @@
 <p>【目標】</p>
 <ol>
   <li>JavaScriptにとにかく慣れること</li>
-  <li> アニメーションの感覚をつかむ（ライブラリはTweenMaxを使用</li>
+  <li> アニメーションの感覚をつかむ（ライブラリはTweenMaxを使用）</li>
 <ol> 
 </div>
