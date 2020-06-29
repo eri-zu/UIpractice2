@@ -1,0 +1,40 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+// スライドダウンのアコーディン実装ポイント
+// .list-content にoverflow: hidden とmax-height: 0rem;をつける
+// .list-txtにmarginをつけること（.list-contentにつけてはいけない）
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.list {
+	margin: 0 auto;
+	max-width: 1080px;
+	width: 100%;
+	margin: 0 auto;
+	.list-item {
+		.list-tit {
+			padding: 2rem;
+			background-color: #eeeeee;
+		}
+		.list-content {
+			padding: 0 2rem;
+			max-height: 0rem;
+			line-height: 2;
+			overflow: hidden;
+			transition: max-height 0.4s ease 0s, padding 0.4s ease 0s;
+			.list-txt {
+				margin-top: 2rem;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
