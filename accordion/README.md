@@ -5,3 +5,7 @@
 <p>矢印がクリックで反対向きになるのをTweenMaxで実装したみたが不要か.. <br>文字の現れ方が理想と違う気がする..ブラッシュアップ要</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/accordion/1/</p>
 
+<h2>2 / スライドダウンのアコーディオン</h2>
+<p>１を理想の動きに近づけた</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/accordion/1/</p>
+
