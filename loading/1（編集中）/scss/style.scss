@@ -17,6 +17,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		z-index: 1000;
+		img {
+			width: 100%;
+		}
 	}
 }
 
@@ -55,19 +58,19 @@
 				filter: brightness(120%) grayscale(100%) saturate(100%);
 				// background-color: #fff;
 				&:nth-child(1) {
-					background-image: url(../img/mv_img01.jpg);
+					background-image: url(../img/img01.jpg);
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					background-size: cover;
 				}
 				&:nth-child(2) {
-					background-image: url(../img/mv_img02.jpg);
+					background-image: url(../img/img02.jpg);
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					background-size: cover;
 				}
 				&:nth-child(3) {
-					background-image: url(../img/mv_img03.jpg);
+					background-image: url(../img/img03.jpg);
 					background-position: 50% 50%;
 					background-repeat: no-repeat;
 					background-size: cover;

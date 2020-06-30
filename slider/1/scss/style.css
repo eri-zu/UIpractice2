@@ -91,21 +91,21 @@ fieldset, img {
 }
 
 .mv .mv-inner .slider .slider-item:nth-child(1) {
-  background-image: url(../img/mv_img01.jpg);
+  background-image: url(../img/img01.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .mv .mv-inner .slider .slider-item:nth-child(2) {
-  background-image: url(../img/mv_img02.jpg);
+  background-image: url(../img/img02.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .mv .mv-inner .slider .slider-item:nth-child(3) {
-  background-image: url(../img/mv_img03.jpg);
+  background-image: url(../img/img03.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
