@@ -12,5 +12,5 @@
 <p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/2/</p>
 
 <h2>3 / シンプル</h2>
-<p>１と同じだが、TweenMaxなしで実装</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/2/</p>
+<p>１と同じだが、TweenMaxなしで実装->easingのかけ方学ぶ必要あり</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/3/</p>
