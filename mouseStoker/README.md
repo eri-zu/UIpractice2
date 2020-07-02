@@ -17,7 +17,7 @@
 
 <h2>4 / シンプル</h2>
 <p>3にイージングをかけた</p>
-<p>メモ:</p>
+<p>【メモ】</p>
 <p>①イージングのかけ方</p>
 <p>nowX += (targetX - nowX) * ease;</p>
 <p>nowY += (targetY - nowY) * ease;</p>
