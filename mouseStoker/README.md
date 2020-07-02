@@ -16,19 +16,19 @@
 <p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/3/</p>
 
 <h2>4 / シンプル</h2>
-<p>3にイージングをかけた</p>
+<p>3にイージングをかけていい感じに追従するようにした</p>
 <p>【メモ】</p>
-<ul>
-  <ol>
+<ol>
+  <li>
     イージングのかけ方<br>
     nowX += (targetX - nowX) * ease;<br>
     nowY += (targetY - nowY) * ease;
-  </ol>
-  <ol>
+  </li>
+  <li>
     window.requestedAnimationFrame(update)<br>
     ->初め、mousemoveで実装したが、マウスを動かすのを止めるとfollwerがついてこなくなった<br>
     ->requestedAnimationFrameで毎フレーム呼び出す必要があると思われる
-  </ol>
-</ul>  
+  </li>
+</ol>  
 
 <p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/4/</p>
