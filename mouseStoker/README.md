@@ -18,10 +18,17 @@
 <h2>4 / シンプル</h2>
 <p>3にイージングをかけた</p>
 <p>【メモ】</p>
-<p>①イージングのかけ方</p>
-<p>nowX += (targetX - nowX) * ease;</p>
-<p>nowY += (targetY - nowY) * ease;</p>
-<p>②window.requestedAnimationFrame(update)</p>
-<p>->初め、mousemoveで実装したが、マウスを動かすのを止めるとfollwerがついてこなくなった</p>
-<p>->requestedAnimationFrameで毎フレーム呼び出す必要があると思われる</p>
+<ul>
+  <ol>
+    イージングのかけ方<br>
+    nowX += (targetX - nowX) * ease;<br>
+    nowY += (targetY - nowY) * ease;
+  </ol>
+  <ol>
+    window.requestedAnimationFrame(update)<br>
+    ->初め、mousemoveで実装したが、マウスを動かすのを止めるとfollwerがついてこなくなった<br>
+    ->requestedAnimationFrameで毎フレーム呼び出す必要があると思われる
+  </ol>
+</ul>  
+
 <p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/4/</p>
