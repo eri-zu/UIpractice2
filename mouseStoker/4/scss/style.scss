@@ -1,0 +1,67 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+body {
+	background-color: #D8EAED;
+	cursor: none; // 元々あるカーソルを消す
+	width: 100%;
+	height: 100%;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	#clickableArea {
+		display: inline-block;
+		padding: 2rem 4rem;
+		cursor: none;
+	}
+}
+
+#cursor, #cursor-follower, #cursor-txt {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	pointer-events: none;
+}
+
+#cursor {
+	background-color: #000000;
+	z-index: 10001;
+	width: 6px;
+	height: 6px;
+	&.active {
+		transform: scale(0);
+	}
+}
+
+#cursor-follower {
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 1000;
+	width: 40px;
+	height: 40px;
+	// transition: transform 0.1s ease-out 0s;
+	transition: transform 0.2s;
+	&.active {
+		transform: scale(3);
+	}
+}
+
+#cursor-txt {
+	z-index: 10001;
+	opacity: 0;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 2rem;
+	&.active {
+		opacity: 1;
+	}
+}
+
