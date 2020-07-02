@@ -24,4 +24,4 @@
 <p>②window.requestedAnimationFrame(update)</p>
 <p>->初め、mousemoveで実装したが、マウスを動かすのを止めるとfollwerがついてこなくなった</p>
 <p>->requestedAnimationFrameで毎フレーム呼び出す必要があると思われる</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/3/</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/mouseStoker/4/</p>
