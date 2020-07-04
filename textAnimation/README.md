@@ -12,3 +12,7 @@
 <h2>3 / ２と同じ</h2>
 <p>jsのコードを少し変えてみた（charAt(i)を使用）</p>
 <p>https://eri-tsutsui.github.io/UIpractice2/textAnimation/3/</p>
+
+<h2>4 / テキストが下からヌルッと現れる</h2>
+<p>TweenMax利用</p>
+<p>https://eri-tsutsui.github.io/UIpractice2/textAnimation/4/</p>
