@@ -2,7 +2,7 @@
 <p>画像読み込み遅延を複数の方法で実装</p>
 <p>【メモ】</p>
 <ul>
-  <li>htmlでsrcは空にしておく　例：src="" data-src="img/img01.jpg"</li>
+  <li>imgタグのsrcは空にしておく　例：src="" data-src="img/img01.jpg"</li>
   <li>読み込みを開始したいタイミングでdata-srcの値を取得し、srcにsetAttributeする</li>
 </ul>
 
