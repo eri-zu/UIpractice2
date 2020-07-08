@@ -11,3 +11,9 @@
 
 <p>https://eri-tsutsui.github.io/UIpractice2/trigonometory/1/</p>
 
+<h2>1 / ボールを円上に配置</h2>
+<p>【メモ】</p>
+<p>360 / dots.length * index でずらす</p>
+
+<p>https://eri-tsutsui.github.io/UIpractice2/trigonometory/2/</p>
+
