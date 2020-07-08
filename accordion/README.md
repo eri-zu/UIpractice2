@@ -3,9 +3,11 @@
 
 <h2>1 / 普通のアコーディオン</h2>
 <p>矢印がクリックで反対向きになるのをTweenMaxで実装したみたが不要か.. <br>文字の現れ方が理想と違う気がする..ブラッシュアップ要</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/accordion/1/</p>
+<p>デモ：https://eri-tsutsui.github.io/UIpractice2/accordion/1/</p>
+<p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/accordion/1/js/main.js</p>
 
 <h2>2 / スライドダウンのアコーディオン</h2>
 <p>スライドダウンで開閉するようにして、1を理想の動きに近づけた。</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/accordion/2/</p>
+<p>デモ：https://eri-tsutsui.github.io/UIpractice2/accordion/2/</p>
+<p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/accordion/2/js/main.js</p>
 
