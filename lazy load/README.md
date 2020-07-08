@@ -1,5 +1,10 @@
 <h1>lazy load</h1>
-画像読み込み遅延を複数の方法で実装
+<p>画像読み込み遅延を複数の方法で実装</p>
+<p>【メモ】</p>
+<ul>
+  <li>htmlでsrcは空にしておく <li class="img-item"><img src="" data-src="img/img01.jpg" alt=""></li></li>
+  <li>読み込みを開始したいタイミングでdata-srcの値を取得し、srcにsetAttributeする</li>
+</ul>
 
 <h2>1 / スクロール</h2>
 <p>スクロール量に応じて画像の読み込みをスタート</p>
