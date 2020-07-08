@@ -9,11 +9,13 @@
 <p> 　 return val * Math.PI / 180;</p>
 <p>}</p>
 
-<p>https://eri-tsutsui.github.io/UIpractice2/trigonometory/1/</p>
+<p>デモ：https://eri-tsutsui.github.io/UIpractice2/trigonometory/1/</p>
+<p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/trigonometory/1/js/main.js</p>
 
 <h2>2 / ボールを円上に配置</h2>
 <p>【メモ】</p>
 <p>360 / dots.length * index でずらす</p>
 
-<p>https://eri-tsutsui.github.io/UIpractice2/trigonometory/2/</p>
+<p>デモ：https://eri-tsutsui.github.io/UIpractice2/trigonometory/2/</p>
+<p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/trigonometory/2/js/main.js</p>
 
