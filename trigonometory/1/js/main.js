@@ -20,6 +20,8 @@
 		ww = window.innerWidth;
 		wh = window.innerHeight;
 
+		console.log(ww);
+
 		const center = {
 			x: ww / 2 - dw,
 			y: wh / 2 - dh

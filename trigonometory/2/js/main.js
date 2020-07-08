@@ -1,36 +1,32 @@
 'use strict';
 
-// 目標:ボールの円運動
+// 目標:ボールの円上に配置
 
 {
 	const dots = document.querySelectorAll('.dot');
-	let ww ,wh;
-	let angle = 0;
-	let radius;
-	let x, y;
 
- 	window.requestAnimationFrame(update);
+	// putDot();
+
+	window.requestAnimationFrame(update);
 
 	function update() {
 
-		ww = window.innerWidth;
-		wh = window.innerHeight;
-		radius = wh * 0.4;
+		const ww = window.innerWidth;
+		const wh = window.innerHeight;
+
+		const radius = wh * 0.25;
 
 		dots.forEach((dot, index) => {
-
-			const dw = dot.clientWidth / 2;
-			const dh = dot.clientHeight / 2;
-
+			
 			const center = {
-				x: ww / 2 - dw,
-				y: wh / 2 - dh
+				x: ww / 2 - dot.clientWidth / 2,
+				y: wh / 2 - dot.clientHeight / 2,
 			};
 
-			angle = index * (360 / dots.length); // 0, 30, 60, ...
+			const deg = index * 360 / dots.length;
 
-			x = center.x + Math.cos(radian(angle)) * radius;
-			y = center.y + Math.sin(radian(angle)) * radius;
+			const x = center.x + Math.cos(radian(deg)) * radius;
+			const y = center.y + Math.sin(radian(deg)) * radius;
 
 			TweenMax.set(dot, {
 				x: x,
@@ -39,9 +35,8 @@
 			
 		});
 
-		angle += 2;
-		
 		window.requestAnimationFrame(update);
+
 	}
 
 	// 度からラジアンに変換
