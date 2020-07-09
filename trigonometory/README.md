@@ -19,3 +19,11 @@
 <p>デモ：https://eri-tsutsui.github.io/UIpractice2/trigonometory/2/</p>
 <p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/trigonometory/2/js/main.js</p>
 
+
+<h2>3 / 奥行きのある円運動</h2>
+<p>【メモ】</p>
+<p></p>
+
+<p>デモ：https://eri-tsutsui.github.io/UIpractice2/trigonometory/3/</p>
+<p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/trigonometory/3/js/main.js</p>
+
