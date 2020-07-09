@@ -1,0 +1,19 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+
+
+.wrapper {
+	transform-style: preserve-3d;
+	perspective: 1000px;
+	#dot {
+		width: 100px;
+		height: 100px;
+		background-color: rgba(255, 0 ,0 ,1);
+		border-radius: 50%;
+		position: absolute;
+	}
+}
