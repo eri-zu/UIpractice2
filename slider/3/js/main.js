@@ -1,13 +1,5 @@
 'use strict';
 
-// 基本のスライダー
-// アニメーションについて↓
-// effectは切り替わる時、明るめのグレースケールで
-// 切り替わった後は、鮮やかになる（グレースケールから徐々に色が入っていくイメージ）
-
-// インジゲーターをクリックできるようにした
-// インジゲーターをクリックしたとき、autoplayとのコンフリクに注意
-
 {
 	const slider = document.querySelector('.slider-list');
 	const imgs = document.querySelectorAll('img');
