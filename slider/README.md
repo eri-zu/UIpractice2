@@ -13,6 +13,6 @@
 
 <h2>3 / スライドで切り替わるスライダー</h2>
 <p>leftの値を変化させてスライドで切り替え</p>
-<p>https://eri-tsutsui.github.io/UIpractice2/slider/3/</p>
-<p>デモ：JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/slider/3/js/main.js</p>
+<p>デモ：https://eri-tsutsui.github.io/UIpractice2/slider/3/</p>
+<p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/slider/3/js/main.js</p>
 
