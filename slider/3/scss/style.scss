@@ -1,0 +1,45 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	.slider {
+		margin-bottom: 60px;
+		.slider-frame {
+			width: 500px;
+			overflow: hidden;
+			.slider-list {
+				display: flex;
+				position: relative;
+				transition: all 0.3s ease 0s;
+				.slider-item {
+					min-width: 500px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	.indicator {
+		text-align: center;
+		&-dot {
+			cursor: pointer;
+			height: 3rem;
+			width: 3rem;
+			border-radius: 50%;
+			background-color: #D8EAED;
+			display: inline-block;
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+	}
+}
+
