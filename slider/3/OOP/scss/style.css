@@ -78,6 +78,7 @@ fieldset, img {
 .wrapper .slider .slider-frame .slider-list {
   display: flex;
   position: relative;
+  left: 0;
   transition: all 0.3s ease 0s;
 }
 

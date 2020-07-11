@@ -2,19 +2,20 @@
 
 // 目標:スライドダウンのアコーディオン
 {
-	const accs = document.querySelectorAll('.list-item');
+	const accordions = document.querySelectorAll('.list-item');
 
-	accs.forEach(acc => {
-		acc.addEventListener('click', () => {
-			const content = acc.querySelector('.list-content');
+	accordions.forEach(accordion => {
+		accordion.addEventListener('click', () => {
+			const content = accordion.querySelector('.list-content');
 
 			content.classList.toggle('active');
 
 			if(content.classList.contains('active')) {
-				content.style.maxHeight = content.scrollHeight + 'px';
+				content.style.height = content.scrollHeight + 'px';
 			} else {
-				content.style.maxHeight = '0px';
+				content.style.height = '0px';
 			}
+			
 		});
 	});
 

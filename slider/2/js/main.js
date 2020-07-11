@@ -44,7 +44,11 @@
 	// mvをクリックすると次のスライドへうつる
 	slider.addEventListener('click', () => {
 		const nextIndex = (current + 1) % len;
+
 		goToSlide(nextIndex);
+		stopAutoPlay(); // 再生されていたautoplayがいったんリセットされる
+		autoPlay(); // 新たなautoplayが開始
+		
 	});
 
 	// インジゲーターをクリックすると該当のスライドへうつる
