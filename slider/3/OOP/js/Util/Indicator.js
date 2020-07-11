@@ -13,7 +13,7 @@ export default class Indicator extends EventTarget {
 				const clickedItem = e.target;
 				this.targetIndex = Array.prototype.indexOf.call(this.indicators, clickedItem);
 
-				this.dispatchEvent(new CustomEvent('clickedIndicator', {index: this.targetIndex}));
+				this.dispatchEvent(new CustomEvent('clickedIndicator', {detail: this.targetIndex}));
 
 			});
 		});

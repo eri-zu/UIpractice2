@@ -10,8 +10,8 @@ export default class Manager extends EventTarget {
 		this.indicator = new Indicator();
 		this.slider = new Slider();
 
-		this.indicator.addEventListener('clickedIndicator', () => {
-			this.slider.goToSlide(this.indicator.targetIndex);
+		this.indicator.addEventListener('clickedIndicator', (e) => {
+			this.slider.goToSlide(e.detail);
 		});
 
 	}
