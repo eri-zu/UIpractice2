@@ -15,4 +15,4 @@
 <p>leftの値を変化させてスライドで切り替え</p>
 <p>デモ：https://eri-tsutsui.github.io/UIpractice2/slider/3/</p>
 <p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/slider/3/js/main.js</p>
-
+<p>OOPコード：https://github.com/eri-tsutsui/UIpractice2/tree/master/slider/3/OOP/js</p>
