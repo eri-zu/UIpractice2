@@ -39,5 +39,10 @@
 
 <h2>9 /　スクロールインジゲーター</h2>
 <p>最後までスクロールすると、インジゲーターが100%になる</p>
+<p>【メモ】</p>
+<ul>
+  <li>ページ全体（window.innerHeight - document.documentElement.scrollHeight）に対して、それくらいスクロール（window.pageYOffset;）したか割合をとる</li>
+  <li>その割合をインジゲーターのwidthにする</li>
+</ul>
 <p>https://eri-tsutsui.github.io/UIpractice2/scroll/9/</p>
 
