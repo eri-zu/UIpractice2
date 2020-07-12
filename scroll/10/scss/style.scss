@@ -1,0 +1,52 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.indicator {
+	position: fixed;
+	right: 4rem;
+	top: 4rem;
+
+	.indicator-dot {
+		background-color: #fff;
+		height: 2.5rem;
+		width: 2.5rem;
+		border-radius: 50%;
+		cursor: pointer;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+		&.active {
+			background-color: #333;
+		}
+	}
+}
+
+.sec {
+	width: 100%;
+	height: 800px;
+	text-align: center;
+	padding-top: 360px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 7rem;
+}
+
+#section01 {
+	background-color: #DD90B8;
+}
+#section02 {
+	background-color: #53B93C;
+}
+#section03 {
+	background-color: #35D3FF;
+}
+#section04 {
+	background-color: #D8899B;
+}
+#section05 {
+	background-color: #6141CF;
+}
+
