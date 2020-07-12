@@ -75,7 +75,7 @@ fieldset, img {
   height: 0rem;
   line-height: 2;
   overflow: hidden;
-  transition: height 0.4s ease 0s, padding 0.4s ease 0s;
+  transition: height 0.4s ease 0s;
 }
 
 .list .list-item .list-content .list-txt {

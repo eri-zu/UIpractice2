@@ -4,6 +4,7 @@ export default class Indicator extends EventTarget {
 		super ();
 		// DOM
 		this.indicators = document.querySelectorAll('.indicator-dot');
+		this.getIndex();
 	}
 
 	getIndex() {
