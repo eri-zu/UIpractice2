@@ -1,5 +1,4 @@
 'use strict';
-// 目標：スクロールインジゲーターの実装
 
 {
 	const sections = document.querySelectorAll('.sec');
@@ -63,6 +62,9 @@
 			const destination = sections[targetIndex];
 			const offsetTop = destination.getBoundingClientRect().top + scrollY;
 
+			dot.classList.remove('active');
+			putActive(targetIndex);
+
 			TweenMax.to(document.documentElement, 0.7, {
 				ease: Power4.easeInOut,
 				scrollTop: offsetTop,
@@ -70,7 +72,5 @@
 
 		});
 	});
-
-
 
 }
