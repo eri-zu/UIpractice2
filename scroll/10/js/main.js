@@ -62,7 +62,7 @@
 			const destination = sections[targetIndex];
 			const offsetTop = destination.getBoundingClientRect().top + scrollY;
 
-			dot.classList.remove('active');
+			removeAllActive();
 			putActive(targetIndex);
 
 			TweenMax.to(document.documentElement, 0.7, {
