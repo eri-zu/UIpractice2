@@ -1,0 +1,36 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.photos {
+	width: 1080px;
+	margin: 0 auto;
+	.photos-item {
+		overflow: hidden;
+		position: relative;
+		&::before {
+			content: '';
+			background-color: #ffffff;
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 1;
+			transition: left 2s cubic-bezier(.4, 0, .2, 1) 0s;
+		}
+		img {
+			width: 100%;
+		}
+		&.active {
+			&::before {
+				left: 100%;
+			}
+		}
+	}
+
+}
+

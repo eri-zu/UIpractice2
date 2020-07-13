@@ -1,0 +1,86 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* 16px*62.5%=10px */
+}
+
+body {
+  color: #333333;
+  font-size: 1.6rem;
+  /* 10px*1.6=16px; */
+  letter-spacing: 0.1em;
+  font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS Pgothic",Osaka,sans-serif,Helvetica,Helvetica Neue,Arial,Verdana;
+  background-color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  color: #333333;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* padding,marginがない要素もあるので、絞って内部・外部余白をリセット */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, figure, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* テーブルのボーダーを一本化 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 古いブラウザで起こりがちな画像の周りにブルーの線がつくのを防ぐ */
+fieldset, img {
+  border: 0;
+}
+
+.photos {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.photos .photos-item {
+  overflow: hidden;
+  position: relative;
+}
+
+.photos .photos-item::before {
+  content: '';
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: left 2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.photos .photos-item img {
+  width: 100%;
+}
+
+.photos .photos-item.active::before {
+  left: 100%;
+}
