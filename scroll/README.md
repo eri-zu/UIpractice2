@@ -46,3 +46,14 @@
 </ul>
 <p>https://eri-tsutsui.github.io/UIpractice2/scroll/9/</p>
 
+<h2>10 /　編集中</h2>
+<p>インジゲーターが壊れているので調査中</p>
+
+<h2>11 /　スクロール量に応じて背景色が変化</h2>
+<p>背景色が黒から赤へ変化</p>
+<p>【メモ】</p>
+<ul>
+  <li>document.scrollHeightでページ全体の高さを取得</li>
+</ul>
+<p>https://eri-tsutsui.github.io/UIpractice2/scroll/9/</p>
+
