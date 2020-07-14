@@ -61,7 +61,7 @@
 <p>背景色が黒から赤へ変化</p>
 <p>【メモ】</p>
 <ul>
-  <li>document.documentElement.scrollHeight;でページ全体の高さを取得可能（oerflow: hiddenで隠れて部分の高さも含む）</li>
+  <li>document.documentElement.scrollHeight;でページ全体の高さを取得可能（oerflow: hiddenで隠れている部分の高さも含む）</li>
 </ul>
 <p>デモ：https://eri-tsutsui.github.io/UIpractice2/scroll/11/</p>
 <p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/scroll/11/js/main.js</p>
