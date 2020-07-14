@@ -2,7 +2,7 @@
 スクロールして発火する様々なイベントを実装
 
 <h2>1 / ボタンのフェードインver1</h2>
-<p>800pcスクロールして、コンバージョンボタンのフェードイン</p>
+<p>800pxスクロールして、コンバージョンボタンのフェードイン</p>
 <p>デモ：https://eri-tsutsui.github.io/UIpractice2/scroll/1/</p>
 <p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/scroll/1/js/main.js</p>
 
