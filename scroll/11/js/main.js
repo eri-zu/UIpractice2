@@ -25,25 +25,4 @@
 
 	}
 
-	// ----------------------------------------
-	// 範囲変換
-	// @val     : 変換したい値
-	// @toMin   : 変換後の最小値
-	// @toMax   : 変換後の最大値
-	// @fromMin : 変換前の最小値
-	// @fromMax : 変換前の最大値
-	// ----------------------------------------
-	function map(val, toMin, toMax, fromMin, fromMax) {
-	if(val <= fromMin) {
-		return toMin;
-	}
-	if(val >= fromMax) {
-		return toMax;
-	}
-	p = (toMax - toMin) / (fromMax - fromMin);
-	return ((val - fromMin) * p) + toMin;
-	}
-
-
-
 }
