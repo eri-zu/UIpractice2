@@ -17,6 +17,6 @@
 <p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/lazy%20load/2/js/main.js</p>
 
 <h2>3 / ロード後、数秒後</h2>
-<p>windowのロードが終わって2秒後に読み込み開始
+<p>6枚目と7枚目の写真だけ、windowのロードが終わって2秒後に読み込み開始
 <p>デモ：https://eri-tsutsui.github.io/UIpractice2/lazy%20load/3/</p>
 <p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/lazy%20load/3/js/main.js</p>
