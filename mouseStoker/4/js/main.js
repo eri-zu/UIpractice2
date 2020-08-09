@@ -5,7 +5,7 @@
 {
 	const cursor = document.getElementById('cursor');
 	const follower = document.getElementById('cursor-follower');
- 	const link = document.getElementById('clickableArea');
+ 	const hoverableArea = document.getElementById('hoverableArea');
 	const ease = 0.13;  // イージング係数＝追従スピード（数値が大きいほど追従スピードが早い）
 	let cw = cursor.offsetWidth; // カーソルの横幅
 	let ch = cursor.offsetHeight; // カーソルの横幅
@@ -36,10 +36,10 @@
 		window.requestAnimationFrame(update); 
 	}
 
-	link.addEventListener('mouseenter', (e) => { // マウスがlink上にのったとき
+	hoverableArea.addEventListener('mouseenter', (e) => { // マウスがlink上にのったとき
 		follower.classList.add('active'); // activeクラスをadd
 	});
-	link.addEventListener('mouseleave', (e) => { // マウスがlink上から離れたとき
+	hoverableArea.addEventListener('mouseleave', (e) => { // マウスがlink上から離れたとき
 		follower.classList.remove('active'); // activeクラスをremove
 	});
 
