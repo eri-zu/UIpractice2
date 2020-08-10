@@ -1,0 +1,32 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+body {
+	background-color: #D8EAED;
+	width: 100%;
+	height: 100%;
+}
+
+#cursor-follower {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	pointer-events: none;
+}
+
+#cursor-follower {
+	background-color: rgba(255, 255, 255, 0.5);
+	z-index: 1000;
+	width: 60px;
+	height: 60px;
+	transition: transform 0.2s;
+	&.active {
+		transform: scale(2.8);
+	}
+}
+
+
