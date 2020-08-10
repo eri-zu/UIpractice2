@@ -1,0 +1,50 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+body {
+	background-color: #F5F5F5;
+	color: #333333;
+}
+
+.section {
+	height: 500px;
+	padding-top: 200px;
+	.section-txt {
+		text-align: center;
+		width: 70%;
+		margin: 0 auto;
+		font-size: 30px;
+	}
+}
+
+.section01 {
+	background-color: #006C61;
+	// transform: skewY(-5deg);
+	.section-txt {
+		color: #ffffff;
+		// transform: skewY(5deg);
+	}
+}
+
+
+.section03 {
+	background-color: #006C61;
+	// transform: skewY(5deg);
+	.section-txt {
+		color: #ffffff;
+		// transform: skewY(-5deg);
+	}
+}
+
+
+.section02 {
+	background-color: orange;
+	transform: skewY(-5deg);
+	.section-txt {
+		color: #ffffff;
+		transform: skewY(5deg);
+	}
+}
