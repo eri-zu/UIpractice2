@@ -36,3 +36,9 @@
 
 <p>デモ：https://eri-tsutsui.github.io/UIpractice2/mouseStoker/4/</p>
 <p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/mouseStoker/4/js/main.js</p>
+
+<h2>6 / カラフルなマウスストーカー</h2>
+<p>色をsetIntervalでランダムに変わるようにした</p>
+
+<p>デモ：https://eri-tsutsui.github.io/UIpractice2/mouseStoker/6/</p>
+<p>JSコード：https://github.com/eri-tsutsui/UIpractice2/blob/master/mouseStoker/6/js/main.js</p>
