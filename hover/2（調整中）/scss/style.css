@@ -1,0 +1,102 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* 16px*62.5%=10px */
+}
+
+body {
+  color: #333333;
+  font-size: 1.6rem;
+  /* 10px*1.6=16px; */
+  letter-spacing: 0.1em;
+  font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS Pgothic",Osaka,sans-serif,Helvetica,Helvetica Neue,Arial,Verdana;
+  background-color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  color: #333333;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #333333;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* padding,marginがない要素もあるので、絞って内部・外部余白をリセット */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, figure, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* テーブルのボーダーを一本化 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 古いブラウザで起こりがちな画像の周りにブルーの線がつくのを防ぐ */
+fieldset, img {
+  border: 0;
+}
+
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+
+.menuIcon {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  padding: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.menuIcon .menuIconBar {
+  background-color: #000;
+  width: 3rem;
+  height: 1px;
+  display: inline-block;
+  position: absolute;
+  left: calc(50% - 2rem);
+  top: calc(50% - 1.5px);
+  transition: all 0.3s;
+}
+
+.menuIcon .menuIconBar:nth-child(2) {
+  transform: translateY(0);
+}
+
+.menuIcon .menuIconBar:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.menuIcon .menuIconBar:nth-child(3) {
+  transform: translateY(10px);
+}

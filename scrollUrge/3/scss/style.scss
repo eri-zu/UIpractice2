@@ -1,0 +1,52 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+section {
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+
+}
+
+.scroll-btn {
+	width: 1px;
+	height: 30px;
+	background-color: #fff;
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+
+}
+
+.scroll-bar{
+	position: absolute;
+	width: 1px;
+
+	left: 0;
+  top: 0;
+
+	&_01 {
+		// 動くバー
+		background: #000;
+		height: 20px;
+		animation: line 2s ease-out infinite;
+
+		@keyframes line {
+			0% {
+				transform: translateY(-40px);
+			}
+			100% {
+				transform: translateY(200%);
+			}
+		}
+	}
+
+	&_02 {
+		// 土台
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.2);
+	}
+}
