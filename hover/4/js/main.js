@@ -1,20 +1,33 @@
 'use strict';
 
-// 目標:ハンバーガーメニュー
-
 {
-	const icon = document.getElementById('menuIcon');
-	const bars = document.querySelectorAll('.menuIconBar');
+	const menuItems = document.querySelectorAll('.nav_pc-item');
+	const duration = 0.5;
 
-	icon.addEventListener('mouseenter', () => {
-    bars.forEach(bar => {
-		  bar.classList.add('is-active');	
-		});
-	});
-	icon.addEventListener('mouseleave', () => {
-    bars.forEach(bar => {
-		  bar.classList.remove('is-active');	
-		});
+	menuItems.forEach(menuItem => {
+
+			menuItem.addEventListener('mouseenter', () => {
+
+				const menuBar = menuItem.querySelector('.nav_pc-bar');
+		
+				TweenMax.to(menuBar, duration, {
+					ease: Expo.easeOut,
+					transformOrigin: "0 0",
+					scaleX: 1
+				});
+			})
+
+			menuItem.addEventListener('mouseleave', () => {
+
+				const menuBar = menuItem.querySelector('.nav_pc-bar');
+		
+				TweenMax.to(menuBar, duration, {
+					ease: Expo.easeOut,
+					transformOrigin: "100% 0",
+					scaleX: 0
+				});
+			})
+
 	});
 
 

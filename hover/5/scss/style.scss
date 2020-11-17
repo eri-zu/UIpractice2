@@ -22,15 +22,6 @@
 				display: flex;
 			}
 
-			&-item {
-				position: relative;
-				cursor: pointer;
-
-				&:nth-child(n + 2) {
-					margin-left: 2rem;
-				}
-			}
-
 			&-link {
 				display: block;
 				padding-bottom: 1rem;
@@ -45,13 +36,32 @@
 				height: 1px;
 				background-color: #000000;
 				width: 100%;
-				transform: scaleX(0);
+				transform: scaleX(0);				
+				transform-origin: 100% 0%;
+				transition: transform 0.2s ease-out 0s;
 
 				&.is-on {
-					transform: scaleX(1);
+					transform: scaleX(1);				
 				}
-				
 			}
+
+			&-item {
+				position: relative;
+				cursor: pointer;
+
+				&:nth-child(n + 2) {
+					margin-left: 2rem;
+				}
+
+				&:hover {
+					.nav_pc-bar {
+						transform-origin: 0% 0%;
+						transform: scaleX(1);
+					}
+				}
+			}
+
+
 		}
 	}
 }

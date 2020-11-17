@@ -75,15 +75,6 @@ fieldset, img {
   display: flex;
 }
 
-.header-inner .nav_pc-item {
-  position: relative;
-  cursor: pointer;
-}
-
-.header-inner .nav_pc-item:nth-child(n + 2) {
-  margin-left: 2rem;
-}
-
 .header-inner .nav_pc-link {
   display: block;
   padding-bottom: 1rem;
@@ -99,8 +90,24 @@ fieldset, img {
   background-color: #000000;
   width: 100%;
   transform: scaleX(0);
+  transform-origin: 100% 0%;
+  transition: transform 0.2s ease-out 0s;
 }
 
 .header-inner .nav_pc-bar.is-on {
+  transform: scaleX(1);
+}
+
+.header-inner .nav_pc-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.header-inner .nav_pc-item:nth-child(n + 2) {
+  margin-left: 2rem;
+}
+
+.header-inner .nav_pc-item:hover .nav_pc-bar {
+  transform-origin: 0% 0%;
   transform: scaleX(1);
 }
