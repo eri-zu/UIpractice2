@@ -1,0 +1,144 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+.menuIcon {
+	position: absolute;
+	padding: 1rem;
+	width: 5rem;
+	height: 5rem;
+	top: 2rem;
+	right: 2rem;
+
+	&-bar {
+		width: 3rem;
+		height: 1px;
+		background-color: #000;
+		display: block;
+		position: absolute;
+
+		&_top {
+			top: 3.2rem;
+		}
+		&_bottom {
+			top: 4rem;
+		}
+	}
+
+	&-txt {
+		position: absolute;
+		transform: translate(-50%);
+		left: 50%;
+		top: 1rem;
+		background-color: #fff;
+		font-size: 1.2rem;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+}
+
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 100;
+	pointer-events: none;
+	display: none;
+
+	&.is-active {
+		pointer-events: auto;
+	  display: block;
+	}
+
+	&-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #ffa79b;
+		height: 100vh;
+	  width: 100%;
+		opacity: 0;
+	}
+
+	&-closebtn {
+		position: absolute;
+		padding: 1rem;
+		width: 5rem;
+		height: 5rem;
+		top: 2rem;
+		right: 2rem;
+
+		// &-txt {
+		// 	position: absolute;
+		// 	transform: translate(-50%);
+		// 	left: 50%;
+		// 	top: 1rem;
+		// 	font-size: 1.2rem;
+		// 	text-align: center;
+		// 	margin-bottom: 1rem;
+		// }
+
+		&-bar {
+			width: 3rem;
+			height: 1px;
+			background-color: #fff;
+			display: block;
+			position: absolute;
+			transform-origin: 100% 0;
+
+			&_top {
+				top: 1.9rem;
+     		transform-origin: left;
+      	transform: rotate(-45deg) scaleX(0);
+			}
+			&_bottom {
+				top: 4rem;
+     		transform-origin: left;
+      	transform: rotate(45deg) scaleX(0);
+			}
+		}
+
+	}
+
+	&-block {
+		margin-top: 12.5rem;
+		padding-right: 2rem;
+		padding-left: 2rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100vh;
+	  width: 100%;
+	}
+
+	&-item {
+		text-align: center;
+		opacity: 0;
+
+		&:nth-child(n + 2) {
+			margin-top: 2.5rem;
+		}
+	}
+
+	&-link {
+		color: #fff;
+		display: inline-block;
+
+		&_en {
+			display: block;
+			color: #fff;
+		}
+
+		&_ja {
+			display: block;
+		}
+	}
+
+}
+

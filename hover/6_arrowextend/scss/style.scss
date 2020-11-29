@@ -1,0 +1,38 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+
+.item {
+	display: block;
+}
+
+.item-arrow {
+
+  svg {
+		cursor: pointer;
+    width: 50px;
+    margin-top: 10px;
+    overflow: visible;
+		// transition: transform 0.3s ease-out;
+
+    polyline {
+      stroke: #000;
+    }
+
+		&:hover {
+  
+     // path = 先端
+			path {
+				transform: scaleX(1.5);
+			}
+		
+			//line = 線
+			line {
+				transform: translateX(75px);
+			}
+		}
+  }
+}

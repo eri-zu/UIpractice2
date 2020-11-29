@@ -1,0 +1,125 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* 16px*62.5%=10px */
+}
+
+body {
+  color: #333333;
+  font-size: 1.6rem;
+  /* 10px*1.6=16px; */
+  letter-spacing: 0.1em;
+  font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS Pgothic",Osaka,sans-serif,Helvetica,Helvetica Neue,Arial,Verdana;
+  background-color: #ffffff;
+}
+
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  color: #333333;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #333333;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* padding,marginがない要素もあるので、絞って内部・外部余白をリセット */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, figure, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* テーブルのボーダーを一本化 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 古いブラウザで起こりがちな画像の周りにブルーの線がつくのを防ぐ */
+fieldset, img {
+  border: 0;
+}
+
+.mv {
+  margin: 50px;
+}
+
+.mv .scroll {
+  display: inline-block;
+}
+
+.mv .scroll-txt {
+  writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.mv .scroll-barWrapper {
+  height: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mv .scroll-bar {
+  position: absolute;
+  top: 0%;
+  left: 6px;
+  background-color: #000;
+  height: 100%;
+  width: 1px;
+  display: inline-block;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  animation: line 2.5s infinite cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+
+@keyframes line {
+  0% {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+  40% {
+    transform: scaleY(1);
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+  40.1% {
+    transform: scaleY(1);
+    transform-origin: 0 100%;
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.1;
+  }
+  90% {
+    transform: scaleY(0);
+    transform-origin: 0 100%;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: 0 100%;
+    opacity: 0;
+  }
+}

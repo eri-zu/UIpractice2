@@ -1,0 +1,25 @@
+// scss
+@import "base/_base";
+@import "base/_reset";
+@import "mixin/_mixin";
+@import "setting/_variables";
+
+
+.item {
+	display: block;
+}
+
+.item-arrow {
+
+  svg {
+		cursor: pointer;
+    width: 50px;
+    margin-top: 10px;
+    overflow: visible;
+		// transition: transform 0.3s ease-out;
+
+    polyline {
+      stroke: #000;
+    }
+  }
+}
